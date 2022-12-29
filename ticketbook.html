@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a site about the tea industry of Srilanka">
+ <title>TEA MUSEUM BOOKING</title>
+ <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+ <link rel="manifest" href="icon/site.webmanifest">
+ <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+ <link rel="shortcut icon" href="icon/favicon.ico">
+ <meta name="msapplication-TileColor" content="#da532c">
+ <meta name="msapplication-config" content="icon/browserconfig.xml">
+ <meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" a href="styles/normalize.css">
+    <link rel="stylesheet" a href="styles/ticketbook.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    
+>
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/9ce51bb1eb.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <BODY>
+    <H2>TEA MUSEUM TOURS-BOOK NOW!</H2>
+   <section class="c1">
+    <section class=container>
+     <form id="form">
+        <h2>DETAILS</h2> 
+        <div class="input-control">
+        <label for="fname" class="form-label">Full Name:</label>
+        <input type="fname" class="form-control" id="fname" >
+        <div class="error"></div>
+        </div>
+        <br> 
+        <div class="input-control">
+        <label for="mobilenumber" class="form-label">Mobile number:</label>
+        <input type="mobilenumber" class="form-control" id="mobilenumber">
+        <div class="error"></div>
+        </div>
+        <br>
+        <div class="input-control">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email">
+        <div class="error"></div>
+      </div>
+        <br>
+        <div class="input-control">
+        <label for="chkemail" class="form-label">Confirm Email:</label>
+        <input type="chkemail" class="form-control" id="chkemail">
+        <div class="error"></div>
+      </div>
+        <br>
+
+        <label for="gender" class="form-label">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+       <br>
+       <br>
+      <label for="date">VISITING DATES:</label>
+        <br>
+        <input type="date" id="DATE" name="date">
+        
+    <br>
+    <button type="submit">SUBMIT</button></p>
+     </form>
+     </section>
+     <section class="container">
+
+    <fieldset>
+      
+
+
+        <legend>GUESTS</legend> 
+         
+        <div class="box">  
+        <h5>LOCAL ADULT:</h5>
+             
+        <div class="x">
+        <button id="LAD-minus" class="btn">-</i></button>
+        <input id="LAD-number" type="number" min="0" class="input" value="0">
+        <button id="LAD-plus" class="btn">+</i></button>
+        </div>
+        
+        <h5>LOCAL CHILD:</h5>
+  
+        <div class="x">
+        <button id="LCH-minus" class="btn">-</button>
+        <input id="LCH-number" type="number" min="0" class="input" value="0">
+        <button  id="LCH-plus" class="btn ">+</button>
+        </div>
+
+       
+        <h5>FOREIGNER-ADULT:</h5>
+        <div class="x">
+         <button id="FAD-minus" class="btn ">-</button>
+        <input id="FAD-number" type="number" min="0" class="input" value="0">
+        <button  id="FAD-plus" class="btn">+</button>
+        </div>
+
+        <h5>FOREIGNER-CHILD:</h5>
+  
+        <div class="x">
+        <button id="FCH-minus" class="btn ">-</button>
+        <input id="FCH-number" type="number" min="0" class="input" value="0">
+        <button  id="FCH-plus" class="btn ">+</button>
+      </div>
+
+        <h5>INFANT:</h5>
+  
+        <div class="x">
+        <button id="INF-minus" class="btn">-</button>
+        <input id="INF-number" type="number" min="0" class="input" value="0">
+        <button  id="INF-plus" class="btn ">+</button>
+       </div>
+
+       
+       <label id="durations" class="form-label">Durations:</label>
+       <select name="durations" id="time">
+           <option value="3hrs">3hrs</option>
+           <option value="1/2 day">1/2 day</option>
+           <option value="Full day">Full day</option>
+      </select>
+  
+      </div>    
+
+</fieldset>
+<BR>
+<BR>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>LOCAL ADULT</th>
+				<th>LOCAL CHILD</th>
+				<th>FOREIGNER-ADULT</th>
+				<th>FOREIGNER-CHILD</th>
+				<th>INFANT</th>
+				<th>DURATION</th>
+				<th>AMOUNT</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td id="ladult"></td>
+				<td id="lchild"></td>
+				<td id="fadult"></td>
+				<td id="fchild" ></td>
+				<td id="infant"></td>
+				<td id="dur"></td>
+				<td id="amo"></td>
+			
+			</tr>
+		</tbody>
+	</table>
+
+
+  
+  <div class="center">
+    <button class= button2 type="button" id="add">ADD TO ORDER</button>
+    </div>
+    
+</section>
+
+</section>
+
+<section class="c2">
+<section class="container">
+    <fieldset>
+        <p>
+            <h2>CURRENT ORDER</h2>
+            <BR>
+            <p id="COO">COST OF ORDER:</p>
+            <BR>
+            <H2>OVERALL ORDER</H2>
+            <BR>
+            <P id="OOC">OVERALL ORDER COST:</P>
+        </p>
+        
+    </fieldset>
+<div class="center">
+<button class= button2 type="button"id="po">PLACE ORDER</button>
+</div>
+</section>
+<section class="container">
+    <p>
+        <button class="b3"
+        type="button" id="addfav"><i class="fa-solid fa-star"></i>
+    Add to favorites
+</button>
+
+    <button class="b3"
+    type="button" id="ordfav"></i>
+Order favourite
+</button>
+</p>
+      <p>
+        <button class="b3"
+        type="button" id="loyalty"></i>
+   Check loyalty
+</button>
+      </p>
+
+      
+      </section>
+
+      <script src="script/ticketbook.js"></script>
+  </BODY>
